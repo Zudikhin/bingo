@@ -964,10 +964,10 @@ input:focus {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+.wallet_coins {
+  display: none;
+}
 @media (min-width: 1024px) {
-  .wallet_coins {
-    display: none;
-  }
   .wallet_lighting_big {
     display: none;
   }
