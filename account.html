@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin https://t.me/Zudihin"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+
+  <body class="dark">
+
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a href="#" class="header_block_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_block_mob">
+            <span>RU</span>
+            <div class="header_block_mob_btn">
+              <img src="img/header/burger.svg" alt="">
+            </div>
+          </div>
+          <div class="header_block_desk">
+            <div class="header_block_desk_loto">
+              <div class="header_block_desk_loto_current">
+                <span>Лотереи</span>
+              </div>
+              <div class="header_block_desk_loto_drop">
+                <ul>
+                  <li>
+                    <a href="#">КНБ</a>
+                  </li>
+                  <li>
+                    <a href="#">Фортуна</a>
+                  </li>
+                  <li>
+                    <a href="#">Спринт</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="header_block_desk_item">
+              Кошелек
+            </a>
+            <a href="#" class="header_block_desk_item">
+              Моя команда
+            </a>
+            <a href="#" class="header_block_desk_item">
+              Партнерская программа
+            </a>
+            <div class="header_block_desk_flag">
+              <img src="img/header/ru.svg" alt="">
+              <div class="header_block_desk_flag_list">
+                <a href="#">
+                  <img src="img/header/usa.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/header/fr.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/header/spain.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/header/korea.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/header/portugal.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <a href="#" class="header_block_desk_settings">
+              <img src="img/header/settings.svg" alt="">
+            </a>
+            <a href="#" class="header_block_desk_user pink">
+              <div class="header_block_desk_user_img">
+                <img src="img/header/ava.png" alt="">
+              </div>
+              <span>ID ABC1234</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="account">
+      <div class="container">
+        <div class="account_block">
+          <div class="account_block_left">
+            <div class="account_block_left_title">
+              <span>Личный кабинет</span>
+              <h2>TonBingo Network</h2>
+            </div>
+            <div class="account_block_left_info">
+              <div class="account_block_left_info_item">
+                <p>Ваш тарифный план</p>
+                <div class="account_block_left_info_item_value">
+                  <span>Standart</span>
+                </div>
+              </div>
+              <div class="account_block_left_info_item">
+                <p>Статус</p>
+                <div class="account_block_left_info_item_value">
+                  <div style="background: rgba(5, 181, 1, 1);" class="account_block_left_info_item_value_dot"></div>
+                  <span>Активен до 1.12.23</span>
+                </div>
+              </div>
+              <div class="account_block_left_info_item">
+                <p>Ваш Id</p>
+                <div class="account_block_left_info_item_value">
+                  <span>ABC1234</span>
+                </div>
+              </div>
+              <div id="copy" class="account_block_left_info_item">
+                <p>Реферальная ссылка</p>
+                <div class="account_block_left_info_item_value">
+                  <img style="margin-right: 10px;" src="img/settings/copy.svg" alt="">
+                  <span>123456789</span>
+                </div>
+              </div>
+              <div id="tarif" class="account_block_left_info_item">
+                <p>Тарифные планы</p>
+                <div class="account_block_left_info_item_value">
+                  <img src="img/settings/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="account_block_left_info_balance">
+                <p>Основной баланс</p>
+                <span>134.5 TON</span>
+              </div>
+            </div>
+            <div class="account_block_left_plan">
+              <div class="account_block_left_plan_balance">
+                <div class="account_block_left_plan_balance_wrap">
+                  <p>Основной баланс</p>
+                  <span>134.5 TON</span>
+                </div>
+              </div>
+              <a href="#" class="account_block_left_plan_item">
+                <p class="fix">PRO</p>
+                <p class="fix">74.9 TON</p>
+                <p>Оплатить</p>
+              </a>
+              <a href="#" class="account_block_left_plan_item">
+                <p class="fix">Elite</p>
+                <p class="fix">24.9 TON</p>
+                <p>Оплатить</p>
+              </a>
+              <div class="account_block_left_plan_item">
+                <p class="fix">Standart</p>
+                <p class="fix">9.9 TON</p>
+                <p>Ваш план</p>
+              </div>
+              <div class="account_block_left_plan_auto">
+                <p>Подключить автоматический платеж</p>
+                <div class="account_block_left_plan_auto_btns">
+                  <button class="active" id="autoYes">Да</button>
+                  <button id="autoNo">Нет</button>
+                </div>
+              </div>
+            </div>
+            <div class="account_block_left_team">
+              <div class="account_block_left_team_title">
+                <h2>Моя команда</h2>
+                <p>Настройки бинарной системы</p>
+              </div>
+              <div class="account_block_left_team_links">
+                <a href="#" class="account_block_left_team_links_item">
+                  <div class="account_block_left_team_links_item_img">
+                    <img src="img/account/prev.svg" alt="">
+                  </div>
+                  <span>Влево</span>
+                </a>
+                <a href="#" class="account_block_left_team_links_item">
+                  <div class="account_block_left_team_links_item_img">
+                    <img src="img/account/next.svg" alt="">
+                  </div>
+                  <span>Вправо</span>
+                </a>
+                <a href="#" class="account_block_left_team_links_item auto">
+                  <div class="account_block_left_team_links_item_img">
+                    <img src="img/account/loading.svg" alt="">
+                  </div>
+                  <span>Авто</span>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="account_block_right">
+            <div class="account_block_right_title">
+              <h2>Информация</h2>
+              <p>Дата регистрации <b>28.10.2023</b></p>
+            </div>
+            <div class="account_block_right_list">
+              <div class="account_block_right_list_item">
+                <div class="account_block_right_list_item_top">
+                  <p>Nickname</p>
+                  <span>Nickname</span>
+                </div>
+                <div class="account_block_right_list_item_wrap">
+                  <p>Левая команда</p>
+                  <span>1</span>
+                </div>
+                <div class="account_block_right_list_item_wrap">
+                  <p>Баллы слева</p>
+                  <span>20</span>
+                </div>
+              </div>
+              <div class="account_block_right_list_item">
+                <div class="account_block_right_list_item_top">
+                  <p>Nickname</p>
+                  <span>Nickname</span>
+                </div>
+                <div class="account_block_right_list_item_wrap">
+                  <p>Правая команда</p>
+                  <span>1</span>
+                </div>
+                <div class="account_block_right_list_item_wrap">
+                  <p>Баллы справа</p>
+                  <span>100</span>
+                </div>
+              </div>
+            </div>
+            <div class="account_block_right_nav">
+              <a href="#">
+                <img src="img/account/down_right.svg" alt="">
+                <span>ID ABC1235</span>
+              </a>
+              <a href="#" class="mid disable">
+                <img src="img/account/top.svg" alt="">
+                <span>НАВЕРХ</span>
+              </a>
+              <a href="#">
+                <img src="img/account/down_left.svg" alt="">
+                <span>ID ABC1236</span>
+              </a>
+            </div>
+            <div class="account_block_right_grid">
+              <a href="#" class="account_block_right_grid_top pink">
+                <div class="account_block_right_grid_top_img">
+                  <img src="img/header/ava.png" alt="">
+                </div>
+                <span>ID ABC1234</span>
+              </a>
+              <div class="account_block_right_grid_mid">
+                <a href="#" class="account_block_right_grid_mid_item pink">
+                  <div class="account_block_right_grid_mid_item_img">
+                    <img src="img/header/ava.png" alt="">
+                  </div>
+                  <span>ID ABC1234</span>
+                </a>
+                <a href="#" class="account_block_right_grid_mid_item pink">
+                  <div class="account_block_right_grid_mid_item_img">
+                    <img src="img/header/ava.png" alt="">
+                  </div>
+                  <span>ID ABC1234</span>
+                </a>
+              </div>
+              <div class="account_block_right_grid_bottom">
+                <a href="#" class="account_block_right_grid_bottom_item black">
+                  <div class="account_block_right_grid_bottom_item_img">
+                  </div>
+                  <span>OPEN</span>
+                </a>
+                <a href="#" class="account_block_right_grid_bottom_item black">
+                  <div class="account_block_right_grid_bottom_item_img">
+                  </div>
+                  <span>OPEN</span>
+                </a>
+                <a href="#" class="account_block_right_grid_bottom_item black">
+                  <div class="account_block_right_grid_bottom_item_img">
+                  </div>
+                  <span>OPEN</span>
+                </a>
+                <a href="#" class="account_block_right_grid_bottom_item black">
+                  <div class="account_block_right_grid_bottom_item_img">
+                  </div>
+                  <span>OPEN</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+          <div class="footer_block_logo">
+            <img src="img/header/logo.svg" alt="">
+          </div>
+          <ul class="footer_block_menu">
+            <li>
+              <a href="#">Лотто</a>
+            </li>
+            <li>
+              <a href="#">Команда</a>
+            </li>
+            <li>
+              <a href="#">Кошелёк</a>
+            </li>
+            <li>
+              <a href="#">Настройки</a>
+            </li>
+          </ul>
+          <ul class="footer_block_pages">
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#">Договор публичной оферты</a>
+            </li>
+            <li>
+              <a href="#">Пользовательское соглашение</a>
+            </li>
+          </ul>
+          <div class="footer_block_soc">
+            <a href="#">
+              <img src="img/footer/telega.svg" alt="">
+            </a>
+            <span>© 2023</span>
+          </div>
+          <img class="footer_block_feature" src="img/footer/1.png" alt="">
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
