@@ -60,5 +60,21 @@ $(document).ready(function() {
         $(".replenish_ton").removeClass("active");
         $(".replenish_usdt").removeClass("active");
         $(".withdraw").removeClass("active");
+        $(".drop_menu").removeClass("active");
+    });
+
+    $(".header_block_mob_btn").click(function() {
+        $(".back_modal").addClass("active");
+        $(".drop_menu").addClass("active");
+    });
+
+    $(".drop_menu_lot_head").click(function() {
+        $(this).toggleClass("active");
+        $(this).parent().find(".drop_menu_lot_wrap").slideToggle();
+    });
+
+    $(".drop_menu_top_close").click(function() {
+        $(".drop_menu").removeClass("active");
+        $(".back_modal").removeClass("active");
     });
 });
