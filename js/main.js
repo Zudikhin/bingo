@@ -1,7 +1,7 @@
 $(document).ready(function() {
     "use strict";
 
-    $(".header_block_desk_loto_current").hover(function () {
+    $(".header_block_desk_loto").hover(function () {
         $(".header_block_desk_loto_drop").stop().slideDown();
     }, function(){
         $(".header_block_desk_loto_drop").stop().slideUp();
@@ -55,11 +55,17 @@ $(document).ready(function() {
         $(".replenish_ton").addClass("active");
     });
 
+    $("#buyTon").click(function() {
+        $(".back_modal").addClass("active");
+        $(".buy_ton").addClass("active");
+    });
+
     $(".back_modal").click(function() {
         $(this).removeClass("active");
         $(".replenish_ton").removeClass("active");
         $(".replenish_usdt").removeClass("active");
         $(".withdraw").removeClass("active");
+        $(".buy_ton").removeClass("active");
         $(".drop_menu").removeClass("active");
     });
 
