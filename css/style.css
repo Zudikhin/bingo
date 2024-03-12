@@ -5327,7 +5327,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .slider_feature_down_arrows_prev {
@@ -5925,4 +5925,38 @@ input:focus {
   .account_block_left_plan_auto {
     margin-top: 40px;
   }
+}
+
+.slider_feature_wrap .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.slider_feature_wrap .slick-dots li {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.slider_feature_wrap .slick-dots li.slick-active {
+  background-color: #F56D21;
+}
+
+.slider_feature_wrap .slick-dots li:first-child {
+  margin-left: 0px;
+}
+
+.slider_feature_wrap .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  opacity: 0;
 }

@@ -87,7 +87,7 @@ $(document).ready(function() {
     $('.slider_feature_wrap').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: false,
+		dots: true,
 		speed: 500,
 		autoplay: false,
         fade: true,
