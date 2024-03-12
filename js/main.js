@@ -83,4 +83,37 @@ $(document).ready(function() {
         $(".drop_menu").removeClass("active");
         $(".back_modal").removeClass("active");
     });
+
+    $('.slider_feature_wrap').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		speed: 500,
+		autoplay: false,
+        fade: true,
+		prevArrow: $('.slider_feature_down_arrows_prev'),
+      	nextArrow: $('.slider_feature_down_arrows_next')
+	});
+
+    $('.fortuna_slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		speed: 500,
+        centerMode: true,
+		autoplay: false,
+        fade: false,
+		prevArrow: $('.fortuna_arrows_prev'),
+      	nextArrow: $('.fortuna_arrows_next'),
+          responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    fade: true
+                }
+            }
+        ]
+	});
+
 });
