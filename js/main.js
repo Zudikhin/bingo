@@ -98,7 +98,7 @@ $(document).ready(function() {
     $('.fortuna_slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		dots: false,
+		dots: true,
         infinity: true,
 		speed: 500,
         centerMode: true,
