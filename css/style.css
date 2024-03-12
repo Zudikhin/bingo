@@ -5319,15 +5319,20 @@ input:focus {
   font-weight: 500;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
   color: #fff;
 }
 
 .slider_feature_down_arrows {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  justify-content: space-between;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: 90px;
+  box-sizing: border-box;
+  padding: 0px 10px;
 }
 
 .slider_feature_down_arrows_prev {
@@ -5931,6 +5936,10 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 4;
+  width: calc(100% - 120px);
+  margin: 0 auto;
   margin-top: 50px;
 }
 
@@ -5959,4 +5968,72 @@ input:focus {
   box-sizing: border-box;
   border-radius: 50%;
   opacity: 0;
+}
+
+.fortuna_slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.fortuna_slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fortuna_slider .slick-dots li.slick-active {
+  background-color: #F56D21;
+}
+
+.fortuna_slider .slick-dots li:first-child {
+  margin-left: 0px;
+}
+
+.fortuna_slider .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.fortuna_arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: -27px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .fortuna_arrows {
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fortuna_arrows {
+    bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .fortuna_arrows {
+    bottom: 0px;
+  }
 }

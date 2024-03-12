@@ -99,6 +99,7 @@ $(document).ready(function() {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: false,
+        infinity: true,
 		speed: 500,
         centerMode: true,
 		autoplay: false,
@@ -110,6 +111,7 @@ $(document).ready(function() {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
+                    dots: true,
                     fade: true
                 }
             }
