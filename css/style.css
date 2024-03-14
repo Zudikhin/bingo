@@ -5365,7 +5365,7 @@ input:focus {
     position: absolute;
     left: 0px;
     width: 100%;
-    bottom: -3px;
+    bottom: 250px;
     justify-content: space-between;
     align-items: center;
     margin-top: 0px;
@@ -5389,6 +5389,11 @@ input:focus {
     font-size: 17px;
     width: 512px;
   }
+  .slider_feature_down_arrows {
+    width: calc(100% - 300px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .slider_feature_down_arrows_next img {
     width: auto;
   }
@@ -5406,6 +5411,11 @@ input:focus {
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 100px;
+  display: none;
+}
+
+.rules.active {
+  display: block;
 }
 
 .rules_text {
@@ -5698,6 +5708,9 @@ input:focus {
 @media (min-width: 1200px) {
   .fortuna {
     padding: 164px 0px 70px 0px;
+  }
+  .fortuna_slider .slick-slide {
+    margin: 0px 50px;
   }
   .fortuna_arrows {
     position: absolute;
@@ -6023,7 +6036,7 @@ input:focus {
 
 @media (min-width: 768px) {
   .fortuna_arrows {
-    bottom: 60px;
+    bottom: -26px;
   }
 }
 
@@ -6034,6 +6047,19 @@ input:focus {
 }
 @media (min-width: 1200px) {
   .fortuna_arrows {
-    bottom: 0px;
+    bottom: 40px;
+    width: calc(100% - 600px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slider_feature_wrap .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
+  }
+  .fortuna_slider .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
   }
 }

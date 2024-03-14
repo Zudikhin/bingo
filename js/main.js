@@ -95,6 +95,17 @@ $(document).ready(function() {
       	nextArrow: $('.slider_feature_down_arrows_next')
 	});
 
+    $('.slider_feature_wrap').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(".rules").removeClass("active");
+        $(".rules").each(function() {
+            var attr = $(this).attr("data-target");
+            var num = parseInt(attr);
+            if(num == currentSlide) {
+                $(this).addClass("active");
+            }
+        });
+    });
+
     $('.fortuna_slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -117,5 +128,16 @@ $(document).ready(function() {
             }
         ]
 	});
+
+    $('.fortuna_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(".rules").removeClass("active");
+        $(".rules").each(function() {
+            var attr = $(this).attr("data-target");
+            var num = parseInt(attr);
+            if(num == currentSlide) {
+                $(this).addClass("active");
+            }
+        });
+    });
 
 });
