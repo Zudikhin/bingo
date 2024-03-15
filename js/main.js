@@ -107,7 +107,7 @@ $(document).ready(function() {
     });
 
     $('.fortuna_slider').slick({
-		slidesToShow: 3,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: true,
         infinity: true,
@@ -119,7 +119,7 @@ $(document).ready(function() {
       	nextArrow: $('.fortuna_arrows_next'),
           responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 1023,
                 settings: {
                     slidesToShow: 1,
                     dots: true,
